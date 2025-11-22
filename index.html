@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de Cores de Imagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Extrator de Cores em Destaque</h1>
+    </header>
+
+    <main class="container">
+        <div class="input-section">
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <div class="image-preview">
+            <img id="uploadedImage" src="#" alt="Pré-visualização da Imagem" style="display: none;">
+            <p id="placeholder">Carregue uma imagem para começar.</p>
+        </div>
+
+        <div class="color-results">
+            <h2>Cores Principais</h2>
+            <div id="paletteContainer" class="palette-container">
+                </div>
+        </div>
+    </main>
+
+    <script type="module" src="dist/code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.2/dist/color-thief.min.js"></script>
+
+<!--<script type="module" src="dist/code.js"></script> -->
+</body>
+</html>

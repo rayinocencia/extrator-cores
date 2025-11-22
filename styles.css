@@ -1,0 +1,77 @@
+/* Base e Responsividade */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Padrão em telas menores */
+    gap: 20px;
+}
+
+/* Layout em telas maiores */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .image-preview, .color-results {
+        flex: 1;
+        min-width: 45%;
+    }
+}
+
+/* Seções de UI */
+.input-section {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+
+.image-preview {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    min-height: 250px;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Paleta de Cores */
+.color-results {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.palette-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Garante quebras de linha em telas pequenas */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.color-swatch {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Faz um círculo */
+    border: 3px solid #333;
+    transition: transform 0.3s;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
