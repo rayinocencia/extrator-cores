@@ -4,7 +4,7 @@
   "description": "Projeto Extrator de Cores com TypeScript",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cpx index.html dist && cpx styles.css dist",
     "start": "node dist/code.js",
     "dev": "npm run build && npm run start"
   },
