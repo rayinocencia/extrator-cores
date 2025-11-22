@@ -1,0 +1,16 @@
+# Diretórios de Módulo (Dependências do npm)
+node_modules/
+
+# Diretório de Saída do TypeScript
+# Ignora todos os arquivos compilados e gerados
+# NOTA: O Netlify precisa do 'dist' para hospedar!
+# Se você estiver usando o GitHub Pages/Netlify, COMENTE esta linha 
+# temporariamente ou garanta que 'dist/' seja adicionada separadamente.
+#dist/
+
+# Arquivos de Bloqueio do npm
+package-lock.json
+npm-debug.log*
+
+# Configurações do VS Code
+.vscode/
